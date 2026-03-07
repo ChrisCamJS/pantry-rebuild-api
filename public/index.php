@@ -1,5 +1,6 @@
 <?php
 // public/index.php
+$origin = $_SERVER['http://localhost:5173'] ?? '*';
 header("Access-Control-Allow-Origin: *"); // Or load from env
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
